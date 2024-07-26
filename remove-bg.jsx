@@ -100,7 +100,7 @@ for(var a = 0 ;a < fileList.length; a++){
 	pngSaveOptions = new PNGSaveOptions();
 	//Edit png options here.
 	//Save image as PNG
-	app.activeDocument.saveAs(new File(saveFolder +'/'+ Date.now() + "_" + fileName + '.png'), pngSaveOptions, true, Extension.LOWERCASE);
+	app.activeDocument.saveAs(new File(saveFolder +'/'+ fileName + '.png'), pngSaveOptions, true, Extension.LOWERCASE);
 	//Close image whithout saving as PSD
 	app.activeDocument.close(SaveOptions.DONOTSAVECHANGES);
 }
